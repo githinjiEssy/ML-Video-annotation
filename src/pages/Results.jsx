@@ -129,22 +129,6 @@ const Results = () => {
               searchQuery={searchQuery}
               onSearchChange={setSearchQuery}
             />
-            
-            {/* Export Options */}
-            <div className="mt-6 bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50">
-              <h3 className="text-lg font-semibold text-white mb-4">Export Results</h3>
-              <div className="space-y-3">
-                <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3 rounded-lg font-medium transition-all">
-                  Download All Segments
-                </button>
-                <button className="w-full bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white py-3 rounded-lg font-medium transition-all border border-gray-600">
-                  Export as CSV
-                </button>
-                <button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white py-3 rounded-lg font-medium transition-all">
-                  Generate Report
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

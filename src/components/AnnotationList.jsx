@@ -153,26 +153,6 @@ const AnnotationList = ({ annotations = [], onPlaySegment, searchQuery = '', onS
                 >
                   <Play className="w-5 h-5 text-white" />
                 </button>
-                
-                <button
-                  onClick={() => handleDownload(annotation)}
-                  className="p-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
-                  title="Download segment"
-                >
-                  <Download className="w-5 h-5 text-white" />
-                </button>
-                
-                <button
-                  onClick={() => handleCopy(annotation.id, annotation.description)}
-                  className="p-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-                  title="Copy description"
-                >
-                  {copiedId === annotation.id ? (
-                    <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  ) : (
-                    <Copy className="w-5 h-5 text-white" />
-                  )}
-                </button>
               </div>
             </div>
           </div>
